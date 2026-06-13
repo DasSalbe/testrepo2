@@ -1,0 +1,200 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #ff4790,
+        #ff8cba,
+        #ffe6f0
+    );
+
+    min-height: 100vh;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #8b004f;
+}
+
+/* HOME PAGE */
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    max-width: 900px;
+}
+
+.container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* MAIN BUTTONS */
+
+button {
+    background: #660000;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 10px 25px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* BACK ARROW */
+
+.backBtn {
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    background: transparent !important;
+
+    color: #8b004f;
+
+    border: none;
+    padding: 0;
+
+    font-size: 45px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+}
+
+.backBtn:hover {
+    transform: scale(1.2);
+}
+
+/* LETTER PAGE LAYOUT */
+
+.content {
+    width: 90%;
+    max-width: 1400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+}
+
+/* LEFT SIDE */
+
+.left-column {
+    width: 60%;
+}
+
+.left-column h1 {
+    margin-bottom: 25px;
+}
+
+.left-column p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* RIGHT SIDE */
+
+.right-column {
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+}
+
+/* MUSIC PLAYER */
+
+audio {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* HEART */
+
+.heart {
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+
+    background: #ff4d88;
+
+    transform: rotate(-45deg);
+
+    margin-top: 40px;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+
+    width: 250px;
+    height: 250px;
+
+    background: #ff4d88;
+
+    border-radius: 50%;
+
+    position: absolute;
+}
+
+.heart::before {
+    top: -125px;
+    left: 0;
+}
+
+.heart::after {
+    left: 125px;
+    top: 0;
+}
+
+.heart-text {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    z-index: 10;
+}
+
+/* NEXT BUTTON */
+
+.navBtn {
+    margin-top: 30px;
+}
