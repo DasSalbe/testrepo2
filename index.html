@@ -3,13 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>June 14</title>
-
+    <title>For You</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pliant:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <script src="script.js"></script>
+<!-- INTRO SCREEN -->
+<div id="intro" class="screen">
+    <h1>To my dearest, Angel. :></h1>
+    <button id="openBtn">Open</button>
+</div>
+
+<!-- FULL EXPERIENCE -->
+<div id="experience" class="hidden experience-screen">
+
+    <button id="backBtn" class="backBtn">←</button>
+
+    <div class="main-layout">
+
+        <!-- LEFT -->
+        <div class="letter-column">
+
+            <div class="letter">
+                <h1>Injeell</h1>
+                <p id="typedText"></p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right-column">
+
+            <div class="music-player">
+
+    <!-- album -->
+    <div class="album-cover">
+        <img src="Photos/album.jpg" alt="album">
+    </div>
+
+    <!-- info -->
+    <div class="music-info">
+        <div class="song-title" id="songTitle">Song Name</div>
+<div class="artist-name" id="artistName">Artist Name</div>
+
+        <!-- progress -->
+        <div class="progress-wrap">
+            <span id="currentTime">0:00</span>
+
+            <input type="range" id="progress" value="0">
+
+            <span id="duration">0:00</span>
+        </div>
+
+        <!-- controls -->
+        <div class="controls">
+            <button id="prevBtn">⏮</button>
+            <button id="playBtn">▶</button>
+            <button id="nextBtn">⏭</button>
+        </div>
+    </div>
+
+</div>
+
+<audio id="music" preload="metadata">
+    <source src="./music.mp3" type="audio/mpeg">
+</audio>
+
+            <div class="heart-section">
+
+                <div class="flower-heart" id="flowerHeart">
+
+                    <div class="heart-center">
+                        <div class="timer-title">
+                            Akinuh  Foreverrr
+                        </div>
+
+                        <div id="relationshipTimer" class="timer">
+                            Loading...
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js" defer></script>
 
 </body>
 </html>
